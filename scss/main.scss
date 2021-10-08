@@ -1,0 +1,21 @@
+// defining variable
+$primary-color: yellow;
+// maps
+$font-thick: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+*{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    // using variable
+    background-color: $primary-color;
+    // calling maps
+    font-weight: map-get($font-thick, bold );
+}
+
+
