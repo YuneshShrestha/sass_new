@@ -4,6 +4,11 @@
 {
     @return map-get($map: $font-thick, $key: $type );
 }
+@mixin name($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
 body{
     width: 80%;
     margin: 0 auto;
@@ -14,14 +19,17 @@ body{
 }
 
 .container{
+    // @include name(column);
+    @include name(row);
     #{&}_paragraph{
+        color: white;
        font: {
            size: 20px;
            family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        }
        &:hover{
-           color: white;
-           transition-delay: 1s;
+           color: wheat;
+           transition-delay: 0.5s;
        }
     }
     

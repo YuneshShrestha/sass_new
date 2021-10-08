@@ -8,18 +8,29 @@
 body {
   width: 80%;
   margin: 0 auto;
-  background-color: orange;
+  background-color: #363534;
   font-weight: 400;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .container .container_paragraph {
+  color: white;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container .container_paragraph:hover {
-  color: white;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  color: wheat;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
