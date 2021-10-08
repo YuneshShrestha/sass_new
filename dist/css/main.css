@@ -9,11 +9,17 @@ body {
   width: 80%;
   margin: 0 auto;
   background-color: orange;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .container .container_paragraph {
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .container_paragraph:hover {
+  color: white;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 /*# sourceMappingURL=main.css.map */

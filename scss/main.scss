@@ -1,12 +1,16 @@
 @import './default';
 @import './variables';
+@function fweight($type)
+{
+    @return map-get($map: $font-thick, $key: $type );
+}
 body{
     width: 80%;
     margin: 0 auto;
     // using variable
     background-color: $primary-color;
     // calling maps
-    font-weight: map-get($font-thick, bold );
+    font-weight: fweight(regular);
 }
 
 .container{
@@ -14,6 +18,10 @@ body{
        font: {
            size: 20px;
            family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       &:hover{
+           color: white;
+           transition-delay: 1s;
        }
     }
     
