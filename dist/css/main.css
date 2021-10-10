@@ -13,7 +13,7 @@ body {
   font-weight: 400;
 }
 
-.container {
+.container, .container2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,23 +23,27 @@ body {
           flex-direction: row;
 }
 
-.container .container_paragraph {
+.container .container_paragraph, .container2 .container_paragraph, .container2 .container2_paragraph {
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container .container_paragraph:hover {
+.container .container_paragraph:hover, .container2 .container_paragraph:hover, .container2 .container2_paragraph:hover {
   color: wheat;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
 @media (max-width: 800px) {
-  .container {
+  .container, .container2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.container2 .container2_paragraph:hover {
+  color: chocolate;
 }
 /*# sourceMappingURL=main.css.map */

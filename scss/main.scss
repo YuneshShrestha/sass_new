@@ -49,6 +49,16 @@ body{
     }
     
 }
+.container2{
+    @extend .container;
+    #{&}_paragraph{
+        @extend .container_paragraph;
+        &:hover{
+            color: chocolate;
+        }
+
+    }
+}
 .light{
     @include light_theme(false);
 }
