@@ -33,4 +33,13 @@ body {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
+
+@media (max-width: 800px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */

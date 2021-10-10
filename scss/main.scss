@@ -14,6 +14,11 @@
     display: flex;
     flex-direction: $direction;
 }
+@mixin mobile {
+   @media (max-width: $mobile) {
+       @content;
+   }
+}
 
 body{
     width: 80%;
@@ -38,6 +43,9 @@ body{
            color: wheat;
            transition-delay: 0.5s;
        }
+    }
+    @include mobile{
+        flex-direction:column;
     }
     
 }
