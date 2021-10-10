@@ -9,6 +9,7 @@ body {
   width: 80%;
   margin: 0 auto;
   background-color: #363534;
+  color: #ffffff;
   font-weight: 400;
 }
 
@@ -23,7 +24,6 @@ body {
 }
 
 .container .container_paragraph {
-  color: white;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

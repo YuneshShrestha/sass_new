@@ -4,6 +4,12 @@
 {
     @return map-get($map: $font-thick, $key: $type );
 }
+@mixin light_theme($light_theme:true) {
+    @if $light_theme {
+        background: lighten($color: $primary-color, $amount: 100%);
+        color: darken($color: $text-color, $amount: 100%);
+    }
+}
 @mixin name($direction) {
     display: flex;
     flex-direction: $direction;
@@ -14,6 +20,7 @@ body{
     margin: 0 auto;
     // using variable
     background-color: $primary-color;
+    color: $text-color;
     // calling maps
     font-weight: fweight(regular);
 }
@@ -22,7 +29,7 @@ body{
     // @include name(column);
     @include name(row);
     #{&}_paragraph{
-        color: white;
+       
        font: {
            size: 20px;
            family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,5 +41,6 @@ body{
     }
     
 }
-
-
+.light{
+    @include light_theme(false);
+}
