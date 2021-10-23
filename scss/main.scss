@@ -1,5 +1,6 @@
 @import './default';
 @import './variables';
+
 @function fweight($type)
 {
     @return map-get($map: $font-thick, $key: $type );
@@ -62,3 +63,9 @@ body{
 .light{
     @include light_theme(false);
 }
+$colors:(
+    "primary": rgb(207, 18, 18),
+    "secondary": rgb(29, 29, 156),
+    "warning": rgb(212, 212, 46)
+);
+@import './color_generation';
