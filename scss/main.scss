@@ -57,6 +57,9 @@ body{
         &:hover{
             color: chocolate;
         }
+        &:last-child{
+            color: red;
+        }
 
     }
 }

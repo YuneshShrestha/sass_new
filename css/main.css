@@ -47,6 +47,10 @@ body {
   color: chocolate;
 }
 
+.container2 .container2_paragraph:last-child {
+  color: red;
+}
+
 .text-primary {
   color: #cf1212;
 }
