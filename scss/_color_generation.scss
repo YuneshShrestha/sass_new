@@ -1,15 +1,26 @@
 // Generating class using map
 @each $key, $val in $colors{
-    .text-#{$key}{
-        color: $val;
-    }
-    .bg-#{$key}{
-        background-color: $val;
-    }
-    // light variations
-    @for $var from 1 to 9 {
-        .text-#{$key}-light-#{$var}{
-            color: mix( #ffffff, $val, $weight: $var * 10);
+    @if ($key=='primary') {
+        .text-#{$key}{
+            color: $val;
+        }
+        @for $var from 1 to 9 {
+            .text-#{$key}-light-#{$var}{
+                color: mix( #ffffff, $val, $weight: $var * 10);
+            }
         }
     }
+    @else{
+        .bg-#{$key}{
+            background-color: $val;
+        }
+        @for $var from 1 to 9 {
+            .bg-#{$key}-light-#{$var}{
+                background-color: mix( #ffffff, $val, $weight: $var * 10);
+            }
+        }
+    }
+   
+    // light variations
+  
 } 
